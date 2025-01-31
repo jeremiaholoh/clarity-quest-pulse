@@ -13,7 +13,7 @@
 
 (define-public (verify-quest (quest-id uint))
   (begin
-    (asserts! (is-some (map-get? verifications {quest-id: quest-id})) err-already-verified)
+    (asserts! (is-none (map-get? verifications {quest-id: quest-id})) err-already-verified)
     (map-insert verifications
       { quest-id: quest-id }
       {
