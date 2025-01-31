@@ -4,6 +4,10 @@ authors = []
 description = ""
 telemetry = false
 requirements = []
+[contracts.quest-manager]
+path = "contracts/quest-manager.clar"
+depends_on = []
+
 [contracts.quest-pulse-token]
 path = "contracts/quest-pulse-token.clar"
 depends_on = []
